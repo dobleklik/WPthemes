@@ -1,0 +1,16 @@
+/*
+Theme Name: Newsroom
+Theme URI: https://demo.dobleklik.com/newsroom (Sitio donde está ubicado)
+Author: dobleklik (importante si tenemos marca)
+Author URI: https://dobleklik.com 
+Description: Ponemos la descripción en inglés, Importante si el tema va a subirse al repositorio 
+              de WP o a algún marketplace
+Version: 0.1 (En desarrollo partir de 0 (0.1, 0.2...) cuando ya vayamos a publicar pasar a version 1
+         De 0 a 1 solo en desarrollo para que no parezca que está en Beta. También es importante
+         para temas de cache y navegadores)
+License: Si va a ir al repositorio de WP siempre licencia gpl GNU General Public License V2 or Later
+License URI: en caso de gpl https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: slug que define que términos son traducibles dentro del tema. Se suele uilizar el
+             nombre del tema ('newsroom')
+Tags: Definen lo que ofrece el tema (mirar en Theme Tags)
+*/
