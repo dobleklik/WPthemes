@@ -14,16 +14,23 @@
 </head>
 <body>
 <?php 
- //loop 
+ //loop, el nº de entradas que traerá son las que hemos definido en Ajustes>Ajustes de lectura> Nº máximo de entradas
 if ( have_posts() ) :
     while ( have_posts() ) : the_post(); ?>
-
-        <article class="hentry">
+    <!-- hemos cerrado php y ahora le decimos como queremos que nos muestre las entradas que encuentre-->
+        <article class="hentry"> <!--irán dentro de la etiqueta article-->
             <?php the_post_thumbnail(); ?>
             <?php the_title( sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink())), '</a></h2>'); ?>
-            <div class="entry-summary">
-            <?php the_excerpt(); ?>
-            </div>
+            <!--dentro de la función the_title podemos añadir una serie de argumentos utilizando la función php sprintf-->
+            <!--utiliza este div para poder luego jugar en css con padding o márgenes por ejemplo igual ocurre en el 
+            siguiente caso, con entry-sumary, si mostramos el extracto-->
+            <div class="entry-content">
+             <?php the_content(); ?>
+            </div> 
+
+           <!-- <div class="entry-summary">
+            <?php //the_excerpt(); ?>
+            </div>-->
         </article>
 
 <?php endwhile;
