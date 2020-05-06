@@ -1,19 +1,20 @@
 <?php
 /**
- * The main template
+ * The main template (definir que tipo de template es, en este caso el main)
  * 
- * @package WordPress
- * @subpackage Newsroom
- * @since Newsroom 1.0
+ * @package WordPress (estamos trabajando sobre Wordpress)
+ * @subpackage Newsroom (nombre de nuestro tema)
+ * @since Newsroom 1.0  (estará presente en la versión x, para controlar los cambios que vayamos haciendo)
  */
 ?>
 <<!DOCTYPE html>
 <html>
 <head>
-<?php wp_head(); ?>
+<?php wp_head(); ?> <!-- hacemos una llamada a esta función, es un hook que nos permite enganchar-->
 </head>
 <body>
-<?php
+<?php 
+ //loop 
 if ( have_posts() ) :
     while ( have_posts() ) : the_post(); ?>
 
