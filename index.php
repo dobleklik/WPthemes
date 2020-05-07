@@ -8,7 +8,7 @@
  */
 
 /****Nos llevamos el html y llamada a head al archivo header.php */
-
+get_header(); //hacemos llamada al archivo header.php donde tiene todo el contenido de la cabecera
  //loop, el nº de entradas que traerá son las que hemos definido en Ajustes>Ajustes de lectura> Nº máximo de entradas
 if ( have_posts() ) :
     while ( have_posts() ) : the_post(); ?>
