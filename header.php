@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template
+ * The header of the theme
  * 
  * @package WordPress
  * @subpackage Newsroom

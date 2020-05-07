@@ -6,14 +6,9 @@
  * @subpackage Newsroom (nombre de nuestro tema)
  * @since Newsroom 1.0  (estará presente en la versión x, para controlar los cambios que vayamos haciendo)
  */
-?>
-<<!DOCTYPE html>
-<html>
-<head>
-<?php wp_head(); ?> <!-- hacemos una llamada a esta función, es un hook que nos permite enganchar-->
-</head>
-<body>
-<?php 
+
+/****Nos llevamos el html y llamada a head al archivo header.php */
+
  //loop, el nº de entradas que traerá son las que hemos definido en Ajustes>Ajustes de lectura> Nº máximo de entradas
 if ( have_posts() ) :
     while ( have_posts() ) : the_post(); ?>
