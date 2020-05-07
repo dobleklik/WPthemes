@@ -6,7 +6,8 @@
  * @subpackage Newsroom (nombre de nuestro tema)
  * @since Newsroom 1.0  (estará presente en la versión x, para controlar los cambios que vayamos haciendo)
  */
-
+?>
+<?php
 /****Nos llevamos el html y llamada a head al archivo header.php */
 get_header(); //hacemos llamada al archivo header.php donde tiene todo el contenido de la cabecera
  //loop, el nº de entradas que traerá son las que hemos definido en Ajustes>Ajustes de lectura> Nº máximo de entradas
@@ -31,8 +32,7 @@ if ( have_posts() ) :
 <?php endwhile;
 
 endif;
+
+get_footer(); //hacemos llamada al footer
 ?>   
 
-<?php wp_footer(); ?>
-</body>
-</html>
