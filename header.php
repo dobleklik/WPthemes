@@ -25,3 +25,7 @@ del usuario-->
 si el usuario está logado, etc-->
     <?php wp_body_open(); ?> <!--añadimos esta función, dentro de ella podremos meter todas las
     acciones que queramos que actuen justo tras la apertura de body-->
+    <div id="page" class="site"> <!-- usa este div para meter a partir de aqui todo el contenido 
+           de nuestro tema, así no choca con posibles plugins que el usuario instale y den estilo 
+               body   (lo cierra en el archivo footer.php -->
+   
